@@ -22,7 +22,14 @@ Examples:
     onlyEvenValues([5,1,2,3,10]) // [2,10]
 
 */
-function onlyEvenValues(arr){
+function onlyEvenValues(arr) {
+    let evenValuesArr = [];
+    arr.forEach(function (val) {
+        if (val % 2 === 0) {
+            evenValuesArr.push(val);
+        };
+    });
+    return evenValuesArr;
     
 }
 
@@ -34,8 +41,12 @@ Examples:
     showFirstAndLast(['hi', 'goodbye', 'smile']) // ['hi', 'ge', 'se']
 
 */
-function showFirstAndLast(arr){
-    
+function showFirstAndLast(arr) {
+    let firstLastArr = [];
+    arr.forEach(function (val) {
+        firstLastArr.push(val[0] + val[val.length - 1]);
+    })
+    return firstLastArr;
 }
 
 /*
