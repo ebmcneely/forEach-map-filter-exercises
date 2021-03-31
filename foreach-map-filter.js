@@ -6,8 +6,12 @@ Examples:
     doubleValues([5,1,2,3,10]) // [10,2,4,6,20]
 
 */
-function doubleValues(arr){
-    
+function doubleValues(arr) {
+    let doubledArr = [];
+    arr.forEach(function (val) {
+        doubledArr.push(val * 2);
+    })
+    return doubledArr;
 }
 
 /*
